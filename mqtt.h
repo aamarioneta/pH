@@ -1,0 +1,13 @@
+#define MQTT_BROKER "192.168.178.200"
+#define MQTT_PORT 1883
+#define MQTT_TOPIC "house/pH1"
+#define MQTT_TOPIC_DISCOVERY "homeassistant/switch/pH1/config"
+#define MQTT_TOPIC_STATE "house/pH1/STATE"
+#define MQTT_TOPIC_PH "house/pH1/PH"
+#define MQTT_TOPIC_TEMP "house/pH1/TEMP"
+#define MQTT_TOPIC_STATE_ON "ON"
+#define MQTT_TOPIC_STATE_OFF "OFF"
+#define MQTT_TOPIC_STATE_SENSOR "SENSOR"
+#define MQTT_TOPIC_LWT "house/pH1/LWT"
+#define MQTT_TOPIC_LWT_ONLINE "Online"
+#define MQTT_FOR_HOMEASSISTANT "{\"name\":\"pH1\",\"stat_t\":\"house/pH1/STATE\",\"avty_t\":\"house/pH1/LWT\",\"pl_avail\":\"Online\",\"pl_not_avail\":\"Offline\",\"cmd_t\":\"house/pH1/cmnd/POWER\",\"val_tpl\":\"{{value_json.POWER}}\",\"pl_off\":\"OFF\",\"pl_on\":\"SENSOR\",\"uniq_id\":\"pH1-1_status\",\"dev\":{\"ids\":[\"pH1-1\"],\"name\":\"pH1\",\"mdl\":\"Generic\",\"sw\":\"0.0.1\",\"mf\":\"marioneta\"}}"
